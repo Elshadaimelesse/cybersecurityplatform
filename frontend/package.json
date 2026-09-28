@@ -1,0 +1,14 @@
+
+{
+  "name":"cybershield-frontend",
+  "private":true,
+  "scripts":{"dev":"vite","build":"vite build"},
+  "dependencies":{
+    "react":"^19.0.0",
+    "react-dom":"^19.0.0",
+    "react-router-dom":"^7.0.0",
+    "@reduxjs/toolkit":"^2.0.0",
+    "axios":"^1.8.0",
+    "recharts":"^2.12.0"
+  }
+}

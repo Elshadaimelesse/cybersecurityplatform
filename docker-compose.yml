@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "5173:5173"
+
+  backend:
+    build: ./backend-go
+    ports:
+      - "8080:8080"
+
+  rust-engine:
+    build: ./malware-engine
+    ports:
+      - "9000:9000"
+
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_DB: cybershield
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
